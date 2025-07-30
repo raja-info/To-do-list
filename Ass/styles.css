@@ -15,6 +15,28 @@ body {
 h1 {
     text-align: center;
 }
+
+/* Modern styles for completed tasks */
+#todo-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+    background: #e9ecef;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Add hover effect for list items */
+#todo-list li:hover {
+    background: #f0f8ff;
+    transition: background 0.2s;
+}
+
+/* Add subtle shadow and scale on button hover */
+button:hover {
+    background: #0056b3;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.15);
+    transform: scale(1.05);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
 #todo-form {
     display: flex;
     gap: 10px;
